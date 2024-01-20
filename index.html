@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&family=Montserrat:wght@600;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@200;500&family=Tenor+Sans&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body{
+       overflow-x: hidden; 
+    }
+    .swiper {
+        width: 100%;
+        /* height: 100%; */
+    }
+
+    .swiper-slide {
+        /* text-align: center; */
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+
+<body>
+    <section class="nav flex items-center p-4 justify-between md:justify-normal md:pl-[50px] md:pr-[50px] md:pt-[20px]">
+        <div class="flex items-center md:hidden gap-[20px]">
+            <i class="uil uil-bars text-[20px] text-[#4d4d4d] relative left-1"></i>
+            <i class="uil uil-search text-[20px]  text-[#4d4d4d]"></i>
+        </div>
+
+        <div class="w-[110px] md:relative md:right-[15px] min-[906px]:relative min-[1060px]:left-[15px]">
+            <img src="/microsoft-logo.png " alt="" class="">
+        </div>
+        <div class="hidden md:flex lg:flex lg:relative lg:left-[50px] ">
+            <ul class="flex items-center">
+                <li class=""><a class="px-[8px] text-[13px] hover:underline" href="">Microsoft 365</a></li>
+                <li class=""><a class="px-[8px] text-[13px] hover:underline" href="">Teams</a></li>
+                <li class=""><a class="px-[8px] text-[13px] hover:underline" href="">Copilot</a></li>
+                <li class=""><a class="px-[8px] text-[13px] hover:underline" href="">Windows</a></li>
+                <li class=""><a class="px-[8px] text-[13px] hover:underline hidden min-[906px]:flex lg:flex"
+                        href="">Surface</a></li>
+                <li class=""><a class="px-[8px] text-[13px] hover:underline hidden min-[955px]:flex lg:flex"
+                        href="">Xbox</a></li>
+                <li class=""><a class="px-[8px] text-[13px] hover:underline hidden min-[955px]:flex lg:flex"
+                        href="">Support</a></li>
+                <li class="min-[955px]:hidden"><a href="" class="text-[13px]">More</a><i class="uil uil-angle-down"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="flex items-center gap-[20px] md:absolute md:right-[50px]">
+            <ul class="hidden md:flex">
+                <li class="text-[13px] hover:underline">All Microsoft <i class="uil uil-angle-down"></i></li>
+                </li>
+            </ul>
+            <div class="flex gap-[2px]">
+                <a class="hidden xl:flex text-[13px] items-center hover:underline">Search</a>
+                <i class="uil uil-search text-[20px] text-[#4d4d4d] hidden md:flex items-center"></i>
+            </div>
+            <div class="flex gap-[2px]">
+                <a class="hidden xl:flex text-[13px] items-center hover:underline">Cart</a>
+                <i class="uil uil-shopping-cart-alt text-[20px] text-[#4d4d4d] flex items-center"></i>
+            </div>
+            <div class="flex gap-[2px]">
+                <a class="hidden xl:flex text-[13px] items-center ">Sign in</a>
+                <i class="uil uil-user-circle text-[27px] text-[#4d4d4d] flex items-center"></i>
+            </div>
+        </div>
+    </section>
+    <section class="announce">
+        <div class="announcement text-center relative top-[10px] bg-[#0067B8] p-[20px] text-[#FFFFFB] font-medium">
+            <h1 class="hover:underline cursor-pointer">Require assistance with Microsoft 365? Call 0008004402127 to
+                inquire or make a purchase</h1><i class="uis uis-angle-double-right"></i>
+        </div>
+    </section>
+    <section class="swipe-content ">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide flex flex-col pb-[50px]">
+                    <div class="img-swipe w-[100%] lg:hidden flex">
+                        <img src="/Highlight-Slim-Multi-Canvas-Copilot-001_VP2-859x540.avif" class="">
+                    </div>
+                    <div class="img-swipe-2 hidden w-[100%] lg:flex">
+                        <img src="/Highlight-Slim-Multi-Canvas-Copilot-001_VP4-1399x600.jpg" class="" alt="">
+                    </div>
+                    <div
+                        class="swipe-content-1 flex flex-col gap-[20px] relative top-[20px] justify-center m-[30px] min-[511px]:left-[-1%] min-[539px]:left[-15%] min-[565px]:left-[-5%] min-[585px]:left-[-5%] min-[615px]:left-[-5%] min-[670px]:left-[-10%] min-[730px]:left-[-15%] min-[900px]:left-[-20%] min-[1080px]:left-[-25%] lg:absolute lg:right-[50%] xl:absolute 2xl:absolute  xl:justify-center xl:flex xl:flex-col  xl:left-[10%] lg:top-[200px] min-[1037px]:left-[10%] min-[1037px]:top-[120px]">
+                        <div class="swipe-button">
+                            <button
+                                class="p-[2px] px-[13px] text-black bg-yellow-400 text-[15px] font-medium">New</button>
+                        </div>
+                        <h1 class="font-bold text-[45px]">Get more from Copilot</h1>
+                        <p class="text-[15px] lg:w-[300px]">See how your everyday AI companion can help enhance life and
+                            work.</p>
+                        <div class="flex items-center gap-[25px]">
+                            <button class="p-[5px] px-[20px] bg-[#0067B8] text-[#FFFF] text-[15px]">For
+                                Individuals</button>
+                            <a class="text-[15px] text-[#0067B8] font-semibold hover:underline cursor-pointer">For
+                                business</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide flex flex-col pb-[50px]">
+                    <div class="img-swipe w-[100%] lg:hidden flex">
+                        <img src="/Highlight-Surface-Pro-9-M1-Family-02-1_VP2-859x540.avif" alt="">
+                    </div>
+                    <div class="img-swipe-2 w-[100%] hidden lg:flex">
+                        <img src="/Highlight-Surface-Pro-9-M1-Family-02-1_VP4-1399x600.avif" alt="">
+                    </div>
+                    <div
+                        class="swipe-content-1 flex flex-col gap-[20px] relative top-[20px] justify-center m-[30px] min-[511px]:left-[-1%] min-[539px]:left[-15%] min-[565px]:left-[-5%] min-[585px]:left-[-5%] min-[615px]:left-[-5%] min-[670px]:left-[-10%] min-[730px]:left-[-15%] min-[900px]:left-[-20%] min-[1080px]:left-[-25%] lg:absolute xl:absolute 2xl:absolute  xl:justify-center xl:flex xl:flex-col  xl:left-[60%] lg:top-[200px] min-[1037px]:left-[70%] min-[1037px]:top-[150px]">
+                        <h1 class="font-bold text-[45px]">Surface Pro 9</h1>
+                        <p class="text-[15px]">Tablet versatility and laptop power — all in one ultra-portable device
+                        </p>
+                        <div class="swipe-button">
+                            <button class="p-[5px] px-[20px] bg-[#0067B8] text-[#FFFF] text-[15px]">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagin relative top-[10px]">
+            <!-- <div class="swiper-button-next"></div> -->
+            <!-- <div class="swiper-button-prev"></div> -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="icons flex flex-wrap relative top-[30px] justify-center items-center gap-[50px]">
+        <div class="icon flex flex-col">
+            <img src="/Link-List-Icons-Microsoft-365.svg" alt="" class="h-[40px]">
+            <a class="underline">Choose your Microsoft 365</a>
+        </div>
+        <div class="icon flex flex-col">
+            <img src="/Link-List-Icons-Xbox-Games-Consoles.svg" alt="" class="h-[40px]">
+            <a class="underline">Shop xbox games and consoles</a>
+        </div>
+        <div class="icon flex flex-col">
+            <img src="/Link-List-Icons-Microsoft-365 (1).svg" alt="" class="h-[40px]">
+            <a class="underline">Get Windows 11</a>
+        </div>
+        <div class="icon flex flex-col">
+            <img src="/Link-List-Icons-Surface-Devices.svg" alt="" class="h-[40px]">
+            <a class="underline">Explore Surface devices</a>
+        </div>
+    </section>
+    <section id="products" class="relative top-[120px] flex justify-center items-center flex-wrap gap-[40px] flex-col">
+        <div class="flex flex-wrap justify-center">
+            <div class="w-[320px] m-2">
+                <img src="/surface laptop 5.webp" alt="">
+                <h1 class="pt-[15px] text-[25px] font-semibold">Surface Laptop 5</h1>
+                <p class="text-[15px] pt-[10px]">Sophisticated style and multitasking speed powered by 12th Gen Intel® Core, with Windows 11.</p>
+                <a href="" class="text-[#0067B8] font-semibold hover:underline pt-[20px]">Learn More</a>
+            </div>
+            <div class="w-[320px] m-2">
+                <img src="/Surface-Laptop-Studio-01-CP.webp" alt="">
+                <h1 class="pt-[15px] text-[25px] font-semibold">Surface Laptop Studio</h1>
+                <p>Flex your creative muscle on the most powerful Surface Laptop. Now available with Windows 11.</p>
+                <a href="" class="text-[#0067B8] font-semibold hover:underline pt-[20px]">Learn More</a>
+            </div>
+            <div class="w-[320px] m-2">
+                <img src="/gldn-XSX-CP-Xbox-Series-X.webp" alt="">
+                <h1 class="pt-[15px] text-[25px] font-semibold">Xbox Series X</h1>
+                <p>The fastest, most powerful Xbox ever.</p>
+                <a href="" class="text-[#0067B8] font-semibold hover:underline pt-[20px]">Learn More</a>
+            </div>
+            <div class="w-[320px] m-2">
+                <img src="/Content-Card-Microsoft-365-Lifestyle-Sandstone-Icon-Toss.avif" alt="">
+                <h1 class="pt-[15px] text-[25px] font-semibold">Maximise the everyday with Microsoft 365</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum in reiciendis inventore sunt suscipit laborum praesentium nulla voluptate vel molestiae.</p>
+                <div class="flex gap-[20px] pt-[20px]">
+                    <a href="" class="text-[#0067B8] font-semibold hover:underline">For one person</a>
+                    <a href="" class="text-[#0067B8] font-semibold hover:underline">For up to six people</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="relative top-[9rem] my-2 mx-4">
+        <div class="flex flex-col justify-center items-center lg:justify-start">
+            <img src="/bingMob.webp" alt="" class="lg:hidden">
+            <div class="lg:h-[20rem] lg:w-11/12 lg:overflow-hidden">
+                <img src="/bingLap.jpeg" alt="" class="hidden lg:block bg-cover">
+            </div>
+            <div
+                class="p-5 relative md:drop-shadow md:w-11/12 bg-slate-100 md:bottom-20 lg:bg-transparent lg:absolute lg:w-1/3 lg:left-[5rem] lg:top-[1rem] xl:top-[2rem]">
+                <h1 class="text-2xl my-3 font-medium"> Announcing the next wave of AI innovation</h1>
+                <p class="my-3">
+                    The new Microsoft Bing and Edge will soon feature more visual search responses, chat history, and
+                    persistent chat within Edge. We’re also adding actions to help people complete tasks.
+                </p>
+                <div class="py-4">
+                    <a href="" class="py-2 px-6 bg-[#0067B8] font-medium text-white">Learn more about it</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="business" class="relative top-[200px] flex flex-col m-5 gap-[10px] flex-wrap justify-center">
+        <h1 class="text-3xl my-3 font-medium relative left-[5%] lg:left-[4%]">For business</h1>
+        <div class="flex gap-[25px] justify-center flex-wrap lg:flex">
+            <div class="w-[320px] flex flex-col gap-[8px] cursor-pointer">
+                <img src="/business-1.avif" alt="">
+                <div>
+                    <h1 class="text-2xl my-3 font-medium">Surface for Business</h1>
+                    <p>No matter what you do, there’s a Surface to help you do it.</p>
+                </div>
+                <a class="text-[#0067B8] hover:underline pt-5 cursor-pointer">Shop now</a>
+            </div>
+            <div class="w-[320px] flex flex-col gap-[8px] cursor-pointer">
+                <img src="/business-2.webp" alt="">
+                <div>
+                    <h1 class="text-2xl my-3 font-medium">Get Microsoft Teams for free</h1>
+                    <p>Online meetings, chat and shared cloud storage – all in one place.</p>
+                </div>
+                <a class="text-[#0067B8] hover:underline pt-5 cursor-pointer">Sign up for free</a>
+            </div>
+            <div class="w-[320px] flex flex-col gap-[8px] cursor-pointer">
+                <img src="/buisness-3.jpg" alt="">
+                <div>
+                    <h1 class="text-2xl my-3 font-medium">Join the era of AI</h1>
+                    <p>Create, communicate, and code with the latest Microsoft AI solutions.</p>
+                </div>
+                <a class="text-[#0067B8] hover:underline pt-5 cursor-pointer">Explore AI solutions</a>
+            </div><div class="w-[320px] flex flex-col gap-[8px] cursor-pointer">
+                <img src="/buisness-4.webp" alt="">
+                <div>
+                    <h1 class="text-2xl my-3 font-medium">Welcome to your Windows 365 Cloud PC</h1>
+                    <p>Securely stream your Windows experience from the Microsoft cloud to any device.</p>
+                </div>
+                <a class="text-[#0067B8] hover:underline pt-5 cursor-pointer">Get it today</a>
+            </div>
+        </div>
+    </section>
+    <div class="flex relative left-[5%] items-center top-12">
+        <div class="flex items-center relative top-[170px]">
+            <h1 class="text-[16px]">Follow Microsoft</h1>
+            <div class="mx-3">
+                <i class="uil uil-facebook-f text-[26px] mx-1"></i>
+                <i class="uil uil-twitter text-[26px] mx-1"></i>
+                <i class="uil uil-youtube text-[26px] mx-1"></i>
+            </div>
+        </div>
+    </div>
+    <div class="flex w-40 h-12 items-center py-2 px-4 bg-blue-200 fixed right-[5%] bottom-5">
+        <i class="uil uil-arrow-up text-[20px] "></i>
+        <p class=" mx-2 font-medium text-[14px]">Back to Top </p>
+    </div>
+    <section class="flex flex-col bg-[#f2f2f2] relative top-[280px]">
+        <footer class="flex flex-wrap justify-center p-4 relative top-4">
+            <div class="p-3 w-80 flex flex-col justify-start items-start ">
+                <h2 class="my-1 font-medium">What's New</h2>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Microsoft 365</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Games</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Surface Pro 9</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Surface Laptop 5</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Surface Laptop Go 2</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Windows 11 Apps</a>
+                </li>
+            </div>
+            <div class="p-3 w-80 flex flex-col justify-start items-start">
+                <h2 class="my-1 font-medium">Microsoft Store</h2>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Account profile</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Download Center</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Microsoft Store Support</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Surface Laptop 5</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Returns</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Order tracking</a>
+                </li>
+            </div>
+            <div class="p-3 w-80 flex flex-col justify-start items-start">
+                <h2 class="my-1 font-medium">Education
+                </h2>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Microsoft in education</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Devices for education</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Microsoft Teams for Education</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Microsoft 365 Education</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Office Education</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Educator training and development</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Deals for students and parents</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Azure for students</a>
+                </li>
+            </div>
+            <div class="p-3 w-80 flex flex-col justify-start items-start">
+                <h2 class="my-1 font-medium">Business</h2>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]"> Microsoft Cloud</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]"> Microsoft Security</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Azure</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]"> Dynamics 365</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Microsoft 365</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Microsoft Advertising</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]"> Microsoft Industry</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Microsoft Teams</a>
+                </li>
+            </div>
+            <div class="p-3 w-80 flex flex-col justify-start items-start">
+                <h2 class="my-1 font-medium">Developer & IT</h2>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Developer Center</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Documentation</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Microsoft Learn</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Microsoft Tech Community</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Azure Marketplace</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">AppSource</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Microsoft Power Platform</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Visual Studio</a>
+                </li>
+            </div>
+            <div class="p-3 w-80 flex flex-col justify-start items-start">
+                <h2 class="my-1 font-medium">Company
+                </h2>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Careers</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">About Microsoft</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]"> Company news</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Privacy at Microsoft</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Investors</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]">Security</a>
+                </li>
+                <li class="list-none my-2">
+                    <a href="" class="text-[13px]"> Sustainability</a>
+                </li>
+            </div>
+        </footer>
+        <div class="flex flex-col justify-between items-center relative bg-[#f2f2f2] pt-10 p-10  lg:flex-row ">
+            <div class="flex items-center relative left-[3.5%]">
+                <a href="" class="text-[13px] mx-2">English (India)</a>
+                <a href="" class="text-[13px] mx-2">Your Privacy Choices</a>
+            </div>
+            <div class="flex items-center relative right-[3.5%] flex-wrap">
+                <a href="" class="text-[13px] mx-2">Contact Microsoft</a>
+                <a href="" class="text-[13px] mx-2">Privacy</a>
+                <a href="" class="text-[13px] mx-2">Terms of use</a>
+                <a href="" class="text-[13px] mx-2">Trademarks</a>
+                <a href="" class="text-[13px] mx-2">About our ads</a>
+                <a href="" class="text-[13px] mx-2"> © Microsoft 2024</a>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
